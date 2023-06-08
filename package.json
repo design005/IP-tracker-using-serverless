@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "netlify-cli": "^15.3.1",
+    "webpack": "^5.85.0"
+  },
+  "scripts": {
+    "dev": "http-server src -p 8080",
+    "netlify": "./node_modules/.bin/netlify"
+  }
+}

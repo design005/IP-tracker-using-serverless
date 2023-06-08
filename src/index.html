@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>IP Tracker-2</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section  >
+  <div class="search-form bg-[url('https://github-production-user-asset-6210df.s3.amazonaws.com/87766018/240878903-17df256d-d5e6-4e61-b57d-206e6978fd0d.png')] 
+md:bg-[url('https://github-production-user-asset-6210df.s3.amazonaws.com/87766018/239496806-c6be9115-7587-4e83-95bb-1fe7e6f02afe.png')] bg-center bg-cover ">
+    <div class="w-full  ">
+      <h1 class="text-2xl text-white text-center pt-5 mb-3">IP Address Tracker</h1>
+      <form class="max-w-[500px] mx-auto flex">
+                  <input type="search" id="search" class="cursor-pointer inline w-full p-2.5 text-sm text-gray-900 bg-gray-50 rounded-l-lg border-l-gray-50 border-l-2 border-gray-300 focus:ring-blue-500 dark:placeholder-[hsl(0, 0%, 59%)] dark:text-black" placeholder="Search for any IP address or domain" required>
+            <span>
+            <button type="submit" class="p-2.5 text-sm font-medium text-white bg-black rounded-r-lg focus:ring-4 focus:outline-none focus:bg-slate-600 dark:bg-black-600 dark:hover:bg-black-700 dark:focus:ring-black-800 hover:bg-slate-600">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" style="margin-top:9px;"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+          <span class="sr-only">Search</span>
+        </button>  
+                         
+            </span> 
+     
+           </form>
+    </div>
+ <div id="IP-info" class=" grid grid-rows-1  text-center md:text-left gap-4 bg-white mx-12 p-6 rounded-r-lg rounded-l-lg mt-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:-mb-10  -mb-20 relative drop-shadow-lg">
+    
+    
+<div class="lg:border-r lg:border-[#969696]/50 mb-2"><h6 class="text-xs uppercase text-[#969696] font-[700] p-r-1 tracking-wider">IP Address</h6>
+  <p class="font-bold font-[700] mt-[4px] text-xl" id="Ip-address"></p>
+    </div>
+  
+  <div class="lg:border-r lg:border-[#969696]/50 mb-2 "><h6 class="text-xs uppercase text-[#969696] font-[700] tracking-wider">Location</h6>
+  <p class="font-bold font-[700] text-xl  " id="location"></p>
+    </div>
+    
+    <div class="lg:border-r lg:border-[#969696]/50 mb-2 "><h6 class="text-xs uppercase text-[#969696] font-[700] tracking-wider">Time Zone</h6>
+  <p class="font-bold font-[700]  text-xl " id="time-zone"></p>
+    </div>
+      
+      <div class="mb-2"><h6 class="text-xs uppercase text-[#969696] font-[700] tracking-wider">ISP</h6>
+  <p class="font-bold font-[700]  text-xl" id="isp"></p>
+</div>
+
+  </div>
+    </div>
+  <div id="map"></div>
+</section>
+<!-- partial -->
+<script src="script.js"></script>
+
+</body>
+</html>
