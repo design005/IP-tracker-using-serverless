@@ -37,8 +37,10 @@ Users should be able to:
 
 
 ### What I learned
+This one was tough.I Learnt how to work with APIs and got to know about responses and ofcourse the backend part to hide the API Key.
 
-
+### Continued development
+The API not giving precise location.So, will work on that and also the layout of search bar which is rendering differently on Iphones.
 
 ### Useful resources
 
@@ -54,4 +56,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-I am thankful for the Dan fletcher's. His youtube video- How To Hide API Keys Using Netlify helped me a lot. It teach me how to work in CLI and how to work on node.js.
+I am thankful for the Dan fletcher. His youtube video- How To Hide API Keys Using Netlify helped me a lot. It teach me how to work on node.js and use CLI.
