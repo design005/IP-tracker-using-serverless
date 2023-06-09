@@ -44,8 +44,8 @@ The API not giving precise location.So, will work on that and also the layout of
 
 ### Useful resources
 
--How To Hide API Keys Using Netlify by Dan Fletcher - https://www.youtube.com/watch?v=m2Dr4L_Ab14
-- and ofcourse chatgpt, it helped me when I get stuck and don't know where to ask. 
+- How To Hide API Keys Using Netlify by Dan Fletcher - https://www.youtube.com/watch?v=m2Dr4L_Ab14
+- And ofcourse chatgpt, it helped me when I get stuck and don't know where to ask. 
 
 
 ## Author
