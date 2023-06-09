@@ -32,7 +32,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS Tailwind
--Netlify function server
+- Netlify function server
 - Mobile-first workflow
 
 
