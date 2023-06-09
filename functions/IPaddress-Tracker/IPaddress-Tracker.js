@@ -3,14 +3,14 @@
 exports.handler = async function (event) {
    
   let ipAddress = event.queryStringParameters.ipAddress;
-  // if (!ipAddress) {
+   // if (!ipAddress) {
   //   // If no specific IP address is provided, get the user's IP address from the request headers
   //   ipAddress = event.headers["true-client-iP"];
   //  console.log(ipAddress);
   //  
   // }
   const API_KEY = process.env.API_KEY   
-       const Url=`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${ipAddress}`
+       const Url=`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${ipAddress}`;
     
  try{
   const response = await fetch(Url);
