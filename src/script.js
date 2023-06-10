@@ -5,12 +5,13 @@ const IP_address=document.querySelector("#Ip-address");
 const location_IP=document.querySelector("#location");
 const time_Zone= document.querySelector("#time-zone");
 const ISP = document.querySelector("#isp");
-const map = L.map('map').setView([0, 0], 13);
+const map = L.map('map').setView([0, 0], 15);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
 
 window.addEventListener("load", async function (event) {
     event.preventDefault();
@@ -21,11 +22,13 @@ window.addEventListener("load", async function (event) {
       getIpinfo(userIpAddress);
    
   });
+
 form.addEventListener("submit",function (event){
    event.preventDefault();
    ipValue = ip_Input.value;
  getIpinfo(ipValue);
   });
+ 
 
 
 async function getIpinfo(ip) {
@@ -49,11 +52,11 @@ function renderInfo(data){
    }
 
 function renderError(){
-  alert("Whoops, something went wrong. Please try again later!");
+  alert("Invalid Ip Address or domain");
   IP_address.innerHTML=" ";
   location_IP.innerHTML = " ";
    time_Zone.innerHTML= " ";
  ISP.innerHTML=" ";
- map.setView([0, 0], 13);
+ map.setView([0, 0], 15);
 
 }
